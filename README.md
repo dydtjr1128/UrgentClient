@@ -24,8 +24,8 @@ try {
 	System.out.println("Connected");
 	System.out.println("Publishing message: " + content);
 
-	sampleClient.normalPublish(topic, content, qos);
-	sampleClient.urgentPublish(topic, content, qos);
+	sampleClient.normalPublish(topic, content, qos);// normal message publish
+	sampleClient.urgentPublish(topic, content, qos);// urgent message publish
 	System.out.println("Message published");
 
 	sampleClient.disconnect();
